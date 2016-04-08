@@ -22,9 +22,9 @@ import jxl.read.biff.BiffException;
    Sheet sheet = w.getSheet(0);
    //loop over first 10 column and lines
    
-   for(int j= 0;j<sheet.getColumns();j++){
-    for (int i=0;i<sheet.getRows(); i++) {
-     Cell cell = sheet.getCell(j,i);
+   for(int j= 0;j<sheet.getRows();j++){
+    for (int i=0;i<sheet.getColumns(); i++) {
+     Cell cell = sheet.getCell(i,j);
      CellType type = cell.getType();
      
      if(type == CellType.LABEL) {
