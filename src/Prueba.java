@@ -79,8 +79,6 @@ public class Prueba extends JFrame implements ActionListener {
 		
 		
 	}
-	public static void main(String[] args) {
-		Prueba p= new Prueba();
-	}
+	
 }
 
